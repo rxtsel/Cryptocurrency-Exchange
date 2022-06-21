@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #0d2235;
+  --font: 'Raleway', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  font-family: var(--font);
+  
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background-image: url(../src/img/hero.png);
+    background-position: center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 5.6rem;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .15;
+
+  }
+}
+
+#rrot {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* github corner */
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+@media (max-width: 768px) {
+  .github-corner {
+    display: none;
+  }
+}
