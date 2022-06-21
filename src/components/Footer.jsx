@@ -7,6 +7,7 @@ const ContainerFooter = styled.footer`
   left: 2rem;
 
   @media (max-width: 768px) {
+    position: relative;
     left: 0;
     right: 0;
   }
