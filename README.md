@@ -4,6 +4,7 @@
 Use:
 - Styled Components.
 - Custom Hooks.
+- Consumption APIs.
 - Responsive Design.
 
 Preview:
